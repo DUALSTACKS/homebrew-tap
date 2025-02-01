@@ -5,20 +5,20 @@
 class GiteaConfigWave < Formula
   desc "CLI tool to manage Gitea repository settings at scale"
   homepage "https://github.com/DUALSTACKS/gitea-config-wave"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/DUALSTACKS/gitea-config-wave/releases/download/v0.1.0/gitea-config-wave_0.1.0_darwin_amd64.tar.gz"
-      sha256 "aaed9aa46261a1716bc3d9e8695c4021b170e960d9d77c9c664a085bf2e6c560"
+      url "https://github.com/DUALSTACKS/gitea-config-wave/releases/download/v0.1.1/gitea-config-wave_0.1.1_darwin_amd64.tar.gz"
+      sha256 "b889ff280e1a6a92371087849364cb90e4b80ba60d64eaa517b25760d384ba0a"
 
       def install
         bin.install "gitea-config-wave"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/DUALSTACKS/gitea-config-wave/releases/download/v0.1.0/gitea-config-wave_0.1.0_darwin_arm64.tar.gz"
-      sha256 "ba0e7ae0bb12a7a11574fedc066bb35e113d174a018015f6f89655796fbfb776"
+      url "https://github.com/DUALSTACKS/gitea-config-wave/releases/download/v0.1.1/gitea-config-wave_0.1.1_darwin_arm64.tar.gz"
+      sha256 "bbc3aceb988452eccf3529b411bce0374e7aa321c7ebbef85c74d020401b09d0"
 
       def install
         bin.install "gitea-config-wave"
@@ -29,8 +29,8 @@ class GiteaConfigWave < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/DUALSTACKS/gitea-config-wave/releases/download/v0.1.0/gitea-config-wave_0.1.0_linux_amd64.tar.gz"
-        sha256 "f616f9192ac79790979fb1b8ca79197ff233e3bf4a360e4e120dff3d7db9ae5a"
+        url "https://github.com/DUALSTACKS/gitea-config-wave/releases/download/v0.1.1/gitea-config-wave_0.1.1_linux_amd64.tar.gz"
+        sha256 "d92cd63efa98b53d46571db6d2c2c045c44fb9c8f35b962be07b27b40d05ae32"
 
         def install
           bin.install "gitea-config-wave"
@@ -39,8 +39,8 @@ class GiteaConfigWave < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/DUALSTACKS/gitea-config-wave/releases/download/v0.1.0/gitea-config-wave_0.1.0_linux_arm64.tar.gz"
-        sha256 "4171a1e02953fdc2638b7492d7090b6c67027e52e40a2b38d97e9acd000f692b"
+        url "https://github.com/DUALSTACKS/gitea-config-wave/releases/download/v0.1.1/gitea-config-wave_0.1.1_linux_arm64.tar.gz"
+        sha256 "fbf05a1361e2c953e16bc0e908ca0aeb528336e8c4735edad12abad9748d307c"
 
         def install
           bin.install "gitea-config-wave"
